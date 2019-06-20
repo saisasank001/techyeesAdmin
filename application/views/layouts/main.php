@@ -275,8 +275,10 @@
                 <!-- Main content -->
                 <section class="content">
                     <?php                    
-                    if(isset($_view) && $_view)
-                        $this->load->view($_view);
+                    if(isset($data) && $data && isset($_view) && $_view)
+                    $this->load->view($_view,$data);
+                    else if(isset($_view) && $_view)
+                    $this->load->view($_view);
                     ?>                    
                 </section>
                 <!-- /.content -->

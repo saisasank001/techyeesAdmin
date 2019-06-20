@@ -9,6 +9,7 @@ class Course extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('Course_model');
+
     } 
 
     /*
@@ -32,7 +33,6 @@ class Course extends CI_Controller{
             $params = array(
 				'points' => $this->input->post('points'),
 				'userId' => $this->input->post('userId'),
-				'timestamp' => $this->input->post('timestamp'),
 				'title' => $this->input->post('title'),
 				'image' => $this->input->post('image'),
             );
@@ -61,8 +61,8 @@ class Course extends CI_Controller{
             {   
                 $params = array(
 					'points' => $this->input->post('points'),
-					'userId' => $this->input->post('userId'),
-					'timestamp' => $this->input->post('timestamp'),
+                    'userId' => $this->input->post('userId'),
+                    
 					'title' => $this->input->post('title'),
 					'image' => $this->input->post('image'),
                 );
@@ -95,6 +95,14 @@ class Course extends CI_Controller{
         }
         else
             show_error('The course you are trying to delete does not exist.');
+    }
+
+    public static function sharingCoursesList() 
+    {
+        $ci = &get_instance();
+        $ci->load->model('Course_model');
+        return $ci->Course_model->get_all_courses();
+        
     }
     
 }

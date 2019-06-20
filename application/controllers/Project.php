@@ -32,7 +32,6 @@ class Project extends CI_Controller{
             $params = array(
 				'user_id' => $this->input->post('user_id'),
 				'status' => $this->input->post('status'),
-				'timestamp' => $this->input->post('timestamp'),
 				'title' => $this->input->post('title'),
 				'idea' => $this->input->post('idea'),
 				'image' => $this->input->post('image'),
@@ -63,7 +62,6 @@ class Project extends CI_Controller{
                 $params = array(
 					'user_id' => $this->input->post('user_id'),
 					'status' => $this->input->post('status'),
-					'timestamp' => $this->input->post('timestamp'),
 					'title' => $this->input->post('title'),
 					'idea' => $this->input->post('idea'),
 					'image' => $this->input->post('image'),

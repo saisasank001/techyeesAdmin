@@ -32,7 +32,6 @@ class Course_topic extends CI_Controller{
             $params = array(
 				'courseId' => $this->input->post('courseId'),
 				'points' => $this->input->post('points'),
-				'timestamp' => $this->input->post('timestamp'),
 				'title' => $this->input->post('title'),
 				'description' => $this->input->post('description'),
             );
@@ -62,7 +61,6 @@ class Course_topic extends CI_Controller{
                 $params = array(
 					'courseId' => $this->input->post('courseId'),
 					'points' => $this->input->post('points'),
-					'timestamp' => $this->input->post('timestamp'),
 					'title' => $this->input->post('title'),
 					'description' => $this->input->post('description'),
                 );

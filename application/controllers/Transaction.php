@@ -33,7 +33,6 @@ class Transaction extends CI_Controller{
 				'userId' => $this->input->post('userId'),
 				'amount' => $this->input->post('amount'),
 				'type' => $this->input->post('type'),
-				'timestamp' => $this->input->post('timestamp'),
 				'transactionMessage' => $this->input->post('transactionMessage'),
             );
             
@@ -63,7 +62,6 @@ class Transaction extends CI_Controller{
 					'userId' => $this->input->post('userId'),
 					'amount' => $this->input->post('amount'),
 					'type' => $this->input->post('type'),
-					'timestamp' => $this->input->post('timestamp'),
 					'transactionMessage' => $this->input->post('transactionMessage'),
                 );
 

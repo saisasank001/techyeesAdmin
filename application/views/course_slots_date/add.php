@@ -10,8 +10,15 @@
 					<div class="col-md-6">
 						<label for="course_id" class="control-label">Course Id</label>
 						<div class="form-group">
-							<input type="text" name="course_id" value="<?php echo $this->input->post('course_id'); ?>" class="form-control" id="course_id" />
+					<select name="course_id" value="<?php echo $this->input->post('course_id'); ?>" class="form-control" id="course_id" >
+							<?php for($i=0; $i<count($data); $i++){?>
+							<option value="<?php echo $data[$i]['id'];?>">
+							<?php echo $data[$i]['title'];?></option>
+							<?php } ?>
+					</select>
 						</div>
+						
+						
 					</div>
 					<div class="col-md-6">
 						<label for="date" class="control-label">Date</label>
@@ -19,12 +26,7 @@
 							<input type="text" name="date" value="<?php echo $this->input->post('date'); ?>" class="form-control" id="date" />
 						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="timestamp" class="control-label">Timestamp</label>
-						<div class="form-group">
-							<input type="text" name="timestamp" value="<?php echo $this->input->post('timestamp'); ?>" class="form-control" id="timestamp" />
-						</div>
-					</div>
+					
 				</div>
 			</div>
           	<div class="box-footer">

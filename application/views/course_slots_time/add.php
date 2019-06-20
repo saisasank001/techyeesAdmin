@@ -19,12 +19,7 @@
 							<input type="text" name="time" value="<?php echo $this->input->post('time'); ?>" class="form-control" id="time" />
 						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="timestamp" class="control-label">Timestamp</label>
-						<div class="form-group">
-							<input type="text" name="timestamp" value="<?php echo $this->input->post('timestamp'); ?>" class="form-control" id="timestamp" />
-						</div>
-					</div>
+					
 				</div>
 			</div>
           	<div class="box-footer">
