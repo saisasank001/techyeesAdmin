@@ -25,12 +25,7 @@
 							<input type="text" name="type" value="<?php echo ($this->input->post('type') ? $this->input->post('type') : $transaction['type']); ?>" class="form-control" id="type" />
 						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="timestamp" class="control-label">Timestamp</label>
-						<div class="form-group">
-							<input type="text" name="timestamp" value="<?php echo ($this->input->post('timestamp') ? $this->input->post('timestamp') : $transaction['timestamp']); ?>" class="form-control" id="timestamp" />
-						</div>
-					</div>
+					
 					<div class="col-md-6">
 						<label for="transactionMessage" class="control-label">TransactionMessage</label>
 						<div class="form-group">

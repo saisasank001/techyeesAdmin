@@ -19,12 +19,7 @@
 							<input type="text" name="date" value="<?php echo ($this->input->post('date') ? $this->input->post('date') : $course_slots_date['date']); ?>" class="form-control" id="date" />
 						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="timestamp" class="control-label">Timestamp</label>
-						<div class="form-group">
-							<input type="text" name="timestamp" value="<?php echo ($this->input->post('timestamp') ? $this->input->post('timestamp') : $course_slots_date['timestamp']); ?>" class="form-control" id="timestamp" />
-						</div>
-					</div>
+					
 				</div>
 			</div>
 			<div class="box-footer">

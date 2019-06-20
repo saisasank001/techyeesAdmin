@@ -14,7 +14,6 @@
 						<th>UserId</th>
 						<th>Amount</th>
 						<th>Type</th>
-						<th>Timestamp</th>
 						<th>TransactionMessage</th>
 						<th>Actions</th>
                     </tr>
@@ -24,7 +23,6 @@
 						<td><?php echo $t['userId']; ?></td>
 						<td><?php echo $t['amount']; ?></td>
 						<td><?php echo $t['type']; ?></td>
-						<td><?php echo $t['timestamp']; ?></td>
 						<td><?php echo $t['transactionMessage']; ?></td>
 						<td>
                             <a href="<?php echo site_url('transaction/edit/'.$t['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Edit</a> 

@@ -19,12 +19,7 @@
 							<input type="text" name="userId" value="<?php echo ($this->input->post('userId') ? $this->input->post('userId') : $course['userId']); ?>" class="form-control" id="userId" />
 						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="timestamp" class="control-label">Timestamp</label>
-						<div class="form-group">
-							<input type="text" name="timestamp" value="<?php echo ($this->input->post('timestamp') ? $this->input->post('timestamp') : $course['timestamp']); ?>" class="form-control" id="timestamp" />
-						</div>
-					</div>
+					
 					<div class="col-md-6">
 						<label for="title" class="control-label">Title</label>
 						<div class="form-group">

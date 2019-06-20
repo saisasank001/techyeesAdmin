@@ -13,7 +13,7 @@
 						<th>ID</th>
 						<th>CourseId</th>
 						<th>Points</th>
-						<th>Timestamp</th>
+				
 						<th>Title</th>
 						<th>Description</th>
 						<th>Actions</th>
@@ -23,7 +23,7 @@
 						<td><?php echo $c['id']; ?></td>
 						<td><?php echo $c['courseId']; ?></td>
 						<td><?php echo $c['points']; ?></td>
-						<td><?php echo $c['timestamp']; ?></td>
+					
 						<td><?php echo $c['title']; ?></td>
 						<td><?php echo $c['description']; ?></td>
 						<td>

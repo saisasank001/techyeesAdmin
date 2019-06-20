@@ -13,7 +13,6 @@
 						<th>ID</th>
 						<th>User Id</th>
 						<th>Status</th>
-						<th>Timestamp</th>
 						<th>Title</th>
 						<th>Description</th>
 						<th>Image</th>
@@ -24,7 +23,6 @@
 						<td><?php echo $j['id']; ?></td>
 						<td><?php echo $j['user_id']; ?></td>
 						<td><?php echo $j['status']; ?></td>
-						<td><?php echo $j['timestamp']; ?></td>
 						<td><?php echo $j['title']; ?></td>
 						<td><?php echo $j['description']; ?></td>
 						<td><?php echo $j['image']; ?></td>

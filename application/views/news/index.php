@@ -13,7 +13,6 @@
 						<th>ID</th>
 						<th>User Id</th>
 						<th>Status</th>
-						<th>Timestamp</th>
 						<th>Title</th>
 						<th>Description</th>
 						<th>Image</th>
@@ -24,7 +23,6 @@
 						<td><?php echo $n['id']; ?></td>
 						<td><?php echo $n['user_id']; ?></td>
 						<td><?php echo $n['status']; ?></td>
-						<td><?php echo $n['timestamp']; ?></td>
 						<td><?php echo $n['title']; ?></td>
 						<td><?php echo $n['description']; ?></td>
 						<td><?php echo $n['image']; ?></td>
