@@ -10,8 +10,12 @@
 					<div class="col-md-6">
 						<label for="course_id" class="control-label">Course Id</label>
 						<div class="form-group">
-							<input type="text" name="course_id" value="<?php echo $this->input->post('course_id'); ?>" class="form-control" id="course_id" />
-						</div>
+						<select name="course_id" value="<?php echo $this->input->post('course_id'); ?>" class="form-control" id="course_id" >
+							<?php for($i=0; $i<count($data); $i++){?>
+							<option value="<?php echo $data[$i]['id'];?>">
+							<?php echo $data[$i]['title'];?></option>
+							<?php } ?>
+					</select>						</div>
 					</div>
 					<div class="col-md-6">
 						<label for="time" class="control-label">Time</label>

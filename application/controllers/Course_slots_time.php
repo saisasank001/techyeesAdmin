@@ -40,7 +40,7 @@ class Course_slots_time extends CI_Controller{
         else
         {            
             $courses = Course::sharingCoursesList();
-            $data['_view'] = 'course_slots_date/add';
+            $data['_view'] = 'course_slots_time/add';
             $data['data'] = $courses;
             $this->load->view('layouts/main',$data);
         }
